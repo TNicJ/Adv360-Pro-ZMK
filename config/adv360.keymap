@@ -39,14 +39,14 @@
         PortalPortal: PortalPortal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LC(T) &kp H &kp T &kp T &kp P &kp COLON &kp FSLH &kp FSLH &kp O &kp R &kp A &kp P &kp P &kp S &kp DOT &kp O &kp S &kp U &kp DOT &kp E &kp D &kp U &kp FSLH &kp P &kp I &kp P &kp O &kp R &kp T &kp A &kp L &kp FSLH &kp G &kp R &kp A &kp N &kp T &kp FSLH &kp LC(V)>;
+            bindings = <&none &kp LC(T) &kp H &kp T &kp T &kp P &kp COLON &kp FSLH &kp FSLH &kp O &kp R &kp A &kp P &kp P &kp S &kp DOT &kp O &kp S &kp U &kp DOT &kp E &kp D &kp U &kp FSLH &kp P &kp I &kp P &kp O &kp R &kp T &kp A &kp L &kp FSLH &kp G &kp R &kp A &kp N &kp T &kp FSLH &kp LC(V) &kp ENTER>;
             label = "PORTALPORTAL";
         };
 
         InvestigatorFolder: InvestigatorFolder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp F4 &kp LS(Z) &kp COLON &kp BSLH &kp LS(G) &kp LS(M) &kp LS(O) &kp BSLH &kp LS(G) &kp R &kp A &kp N &kp T &kp S &kp UNDER &kp LS(S) &kp U &kp P &kp P &kp O &kp R &kp T &kp BSLH &kp LS(I) &kp N &kp V &kp E &kp S &kp T &kp I &kp G &kp A &kp T &kp O &kp R &kp S &kp C_MENU_RIGHT>;
+            bindings = <&none &kp F4 &kp LS(Z) &kp COLON &kp BSLH &kp LS(G) &kp LS(M) &kp LS(O) &kp BSLH &kp LS(G) &kp R &kp A &kp N &kp T &kp S &kp UNDER &kp LS(S) &kp U &kp P &kp P &kp O &kp R &kp T &kp BSLH &kp LS(I) &kp N &kp V &kp E &kp S &kp T &kp I &kp G &kp A &kp T &kp O &kp R &kp S &kp C_MENU_RIGHT &kp ENTER>;
             label = "INVESTIGATORFOLDER";
         };
     };
