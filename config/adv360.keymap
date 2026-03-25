@@ -35,6 +35,20 @@
             bindings = <&none &kp LC(UP_ARROW)>;
             label = "BRIGHTNESSUP";
         };
+
+        PortalPortal: PortalPortal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LC(T) &kp H &kp T &kp T &kp P &kp COLON &kp FSLH &kp FSLH &kp O &kp R &kp A &kp P &kp P &kp S &kp DOT &kp O &kp S &kp U &kp DOT &kp E &kp D &kp U &kp FSLH &kp P &kp I &kp P &kp O &kp R &kp T &kp A &kp L &kp FSLH &kp G &kp R &kp A &kp N &kp T &kp FSLH &kp LC(V)>;
+            label = "PORTALPORTAL";
+        };
+
+        InvestigatorFolder: InvestigatorFolder {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp F4 &kp LS(Z) &kp COLON &kp BSLH &kp LS(G) &kp LS(M) &kp LS(O) &kp BSLH &kp LS(G) &kp R &kp A &kp N &kp T &kp S &kp UNDER &kp LS(S) &kp U &kp P &kp P &kp O &kp R &kp T &kp BSLH &kp LS(I) &kp N &kp V &kp E &kp S &kp T &kp I &kp G &kp A &kp T &kp O &kp R &kp S &kp C_MENU_RIGHT>;
+            label = "INVESTIGATORFOLDER";
+        };
     };
 
     keymap {
@@ -43,11 +57,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                        &mo 3      &kp N6  &kp N7           &kp N8         &kp N9    &kp N0    &kp MINUS
-&kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                         &none      &kp Y   &kp U            &kp I          &kp O     &kp P     &kp BSLH
-&kp LEFT_SHIFT    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT       &kp LGUI       &kp RCTRL  &none      &kp H   &kp J            &kp K          &kp L     &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME       &kp PG_UP                            &kp N   &kp M            &kp COMMA      &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2             &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &mo 1      &kp ENTER      &kp RIGHT_WIN  &kp ENTER  &kp SPACE          &Brightnessdown  &Brightnessup  &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                   &mo 3      &kp N6  &kp N7           &kp N8         &kp N9    &kp N0    &kp MINUS
+&kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &PortalPortal                                                            &none      &kp Y   &kp U            &kp I          &kp O     &kp P     &kp BSLH
+&kp LEFT_SHIFT    &kp A      &kp S     &kp D     &kp F      &kp G   &InvestigatorFolder  &kp LCTRL  &kp LALT       &kp LGUI       &kp RCTRL  &none      &kp H   &kp J            &kp K          &kp L     &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z      &kp X     &kp C     &kp V      &kp B                                   &kp HOME       &kp PG_UP                            &kp N   &kp M            &kp COMMA      &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2             &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC             &mo 1      &kp ENTER      &kp RIGHT_WIN  &kp ENTER  &kp SPACE          &Brightnessdown  &Brightnessup  &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
