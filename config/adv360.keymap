@@ -46,7 +46,7 @@
         InvestigatorFolder: InvestigatorFolder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp F4 &kp LS(Z) &kp COLON &kp BSLH &kp LS(G) &kp LS(M) &kp LS(O) &kp BSLH &kp LS(G) &kp R &kp A &kp N &kp T &kp S &kp SPACE &kp LS(S) &kp U &kp P &kp P &kp O &kp R &kp T &kp BSLH &kp LS(I) &kp N &kp V &kp E &kp S &kp T &kp I &kp G &kp A &kp T &kp O &kp R &kp S &kp C_MENU_RIGHT &kp ENTER>;
+            bindings = <&none &kp F4 &kp LS(Z) &kp COLON &kp BSLH &kp LS(G) &kp LS(M) &kp LS(O) &kp BSLH &kp LS(G) &kp R &kp A &kp N &kp T &kp S &kp SPACE &kp LS(S) &kp U &kp P &kp P &kp O &kp R &kp T &kp BSLH &kp LS(I) &kp N &kp V &kp E &kp S &kp T &kp I &kp G &kp A &kp T &kp O &kp R &kp S &kp ENTER>;
             label = "INVESTIGATORFOLDER";
         };
     };
