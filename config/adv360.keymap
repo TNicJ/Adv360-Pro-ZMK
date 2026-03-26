@@ -49,6 +49,20 @@
             bindings = <&none &kp F4 &kp LS(Z) &kp COLON &kp BSLH &kp LS(G) &kp LS(M) &kp LS(O) &kp BSLH &kp LS(G) &kp R &kp A &kp N &kp T &kp S &kp SPACE &kp LS(S) &kp U &kp P &kp P &kp O &kp R &kp T &kp BSLH &kp LS(I) &kp N &kp V &kp E &kp S &kp T &kp I &kp G &kp A &kp T &kp O &kp R &kp S &kp ENTER>;
             label = "INVESTIGATORFOLDER";
         };
+
+        Tab_left: Tab_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LC(PAGE_UP)>;
+            label = "TAB_LEFT";
+        };
+
+        Tab_right: Tab_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LC(PAGE_DOWN)>;
+            label = "TAB_RIGHT";
+        };
     };
 
     keymap {
@@ -68,11 +82,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3        &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp UP_ARROW  &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp LEFT  &kp DOWN      &kp RIGHT  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C         &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT      &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1     &kp N2     &kp N3        &kp N4      &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &Tab_left  &kp UP_ARROW  &Tab_right  &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp LEFT   &kp DOWN      &kp RIGHT   &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp Z      &kp X      &kp C         &kp V       &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS   &kp LEFT      &kp RIGHT           &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
