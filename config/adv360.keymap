@@ -70,6 +70,13 @@
             bindings = <&none &kp F4 &kp LS(Z) &kp COLON &kp BSLH &kp LS(G) &kp LS(M) &kp LS(O) &kp BSLH &kp LS(G) &kp R &kp A &kp N &kp T &kp S &kp SPACE &kp LS(S) &kp U &kp P &kp P &kp O &kp R &kp T &kp ENTER>;
             label = "GRANTSUPPORTFOLDER";
         };
+
+        PortalPortal_Award: PortalPortal_Award {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LC(T) &kp H &kp T &kp T &kp P &kp COLON &kp FSLH &kp FSLH &kp O &kp R &kp A &kp P &kp P &kp S &kp DOT &kp O &kp S &kp U &kp DOT &kp E &kp D &kp U &kp FSLH &kp P &kp I &kp P &kp O &kp R &kp T &kp A &kp L &kp FSLH &kp A &kp W &kp A &kp R &kp D &kp FSLH &kp LC(V) &kp ENTER>;
+            label = "PORTALPORTAL_AWARD";
+        };
     };
 
     keymap {
@@ -89,11 +96,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2     &kp N3        &kp N4      &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM         &kp KP_EQUAL     &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &Tab_left  &kp UP_ARROW  &Tab_right  &kp T   &none                                                    &none      &kp Y   &kp KP_N7          &kp KP_N8        &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp LEFT   &kp DOWN      &kp RIGHT   &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4          &kp KP_N5        &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X      &kp C         &kp V       &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1          &kp KP_N2        &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS   &kp LEFT      &kp RIGHT           &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1     &kp N2     &kp N3        &kp N4      &kp N5  &trans                                                              &mo 3      &kp N6  &kp KP_NUM         &kp KP_EQUAL     &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &Tab_left  &kp UP_ARROW  &Tab_right  &kp T   &PortalPortal_Award                                                 &none      &kp Y   &kp KP_N7          &kp KP_N8        &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp LEFT   &kp DOWN      &kp RIGHT   &kp G   &none                &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4          &kp KP_N5        &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp Z      &kp X      &kp C         &kp V       &kp B                                   &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1          &kp KP_N2        &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS   &kp LEFT      &kp RIGHT           &kp BSPC             &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
